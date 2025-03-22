@@ -1,0 +1,139 @@
+{
+    "name": "XWF-Yangmao订阅",
+    "description": "一起来薅羊毛",
+   "task": [{
+            "config": "2 */30 * * * * https://raw.githubusercontent.com/XWF888/Task/Main/qczjspeed.js, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/qczjspeed.png, tag=汽车之家极速版, enabled=false",
+        }, {
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/ziye-qczjspeed-header..txt, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/qczjspeed.png, tag=汽车之家极速版获取header, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/ziye-qczjspeed-header.txt, tag=汽车之家极速版获取header, update-interval=86400, opt-parser=false, enabled=false",
+        }, {
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/ziye-qczjspeed-body1.txt, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/qczjspeed.png, tag=汽车之家极速版获取body, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/ziye-qczjspeed-body1.txt, tag=汽车之家极速版获取body, update-interval=86400, opt-parser=false, enabled=false",
+        }, {
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/ziye-qczjspeed-body2.txt, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/qczjspeed.png, tag=汽车之家极速版获取时段body, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/ziye-qczjspeed-body2.txt, tag=汽车之家极速版获取时段body, update-interval=86400, opt-parser=false, enabled=false",
+        },
+            
+            
+        {
+            "config": "50 7 8-23 * * * https://raw.githubusercontent.com/XWF888/Task/Main/xiaole.js, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/xiaole.png, tag=小乐, enabled=false",
+        },{
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/ziye-xiaole-header.txt, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/xiaole.png, tag=小乐获取header, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/ziye-xiaole-header.txt, tag=小乐获取header, update-interval=86400, opt-parser=false, enabled=false",
+        },
+            
+            
+        {
+            "config": "19 */30 8-23 * * * https://raw.githubusercontent.com/XWF888/Task/Main/iboxpay.js, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/iboxpay.png, tag=笑谱, enabled=false",
+        }, {
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/ziye-iboxpay-body.txt, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/iboxpay.png, tag=笑谱获取token, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/ziye-iboxpay-body.txt, tag=笑谱获取token, update-interval=86400, opt-parser=false, enabled=false",
+        },{
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/ziye-iboxpay-body2.txt, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/iboxpay.png, tag=笑谱获取视频ck, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/ziye-iboxpay-body2.txt, tag=笑谱获取视频ck, update-interval=86400, opt-parser=false, enabled=false",
+        },
+            
+            
+        {
+            "config": "16 0 7,10,23 * * * https://raw.githubusercontent.com/XWF888/Task/Main/flw.js, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/flw.png, tag=返利网, enabled=false",
+        }, {
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/ziye-flw-header.txt, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/flw.png, tag=返利网获取header, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/ziye-flw-header.txt, tag=返利网获取header, update-interval=86400, opt-parser=false, enabled=false",
+        }, {
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/ziye-flw-body.txt, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/flw.png, tag=返利网获取body, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/ziye-flw-body.txt, tag=返利网获取body, update-interval=86400, opt-parser=false, enabled=false",
+        },
+            
+            
+        {
+            "config": "1 */5 * * * * https://raw.githubusercontent.com/XWF888/Task/Main/githubAC.js, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/githubAC.png, tag=githubAC, enabled=false",
+        }, {
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/ziye-githubAC-body.txt, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/githubAC.png, tag=githubAC获取body, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/ziye-githubAC-body.txt, tag=githubAC获取body, update-interval=86400, opt-parser=false, enabled=false",
+        },
+            
+            
+        {
+            "config": "1 */30 * * * * https://raw.githubusercontent.com/XWF888/Task/Main/zhima.js, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/zhima.PNG, tag=芝嫲, enabled=false",
+        }, {
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/ziye-zhima-body.txt, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/zhima.PNG, tag=芝嫲获取body, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/ziye-zhima-body.txt, tag=芝嫲获取body, update-interval=86400, opt-parser=false, enabled=false",
+        },
+            
+            
+        {
+            "config": "2 5 * * * * https://raw.githubusercontent.com/XWF888/Task/Main/QQread.js, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/QQread.png, tag=QQ阅读, enabled=false",
+        }, {
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/ziye-QQread-url.txt, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/QQread.png, tag=QQ阅读获取url, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/ziye-QQread-url.txt, tag=QQ阅读获取url, update-interval=86400, opt-parser=false, enabled=false",
+        },
+            
+            
+        {
+            "config": "7 */30 * * * * https://raw.githubusercontent.com/XWF888/Task/Main/bububao.js, img-url=https://qxzy.top/rules/QuantumultX/img/bbb.png, tag=步步宝, enabled=false",
+        }, {
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/ziye-bububao-header.txt, img-url= https://qxzy.top/rules/QuantumultX/img/bbb.png, tag=步步宝获取header, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/ziye-bububao-header.txt, tag=步步宝获取header, update-interval=86400, opt-parser=false, enabled=false",
+        },
+            
+            
+        {
+            "config": "9 */30 * * * * https://raw.githubusercontent.com/XWF888/Task/Main/yuedongzu.js, img-url=https://qxzy.top/rules/QuantumultX/img/yuedongzu.png, tag=悦动族, enabled=false",
+        }, {
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/ziye-yuedongzu-header.txt, img-url=https://qxzy.top/rules/QuantumultX/img/yuedongzu.png, tag=悦动族获取header, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/ziye-yuedongzu-header.txt, tag=悦动族获取header, update-interval=86400, opt-parser=false, enabled=false",
+        },
+            
+            
+        {
+            "config": "11 */30 * * * * https://raw.githubusercontent.com/XWF888/Task/Main/qmyd.js, img-url=https://qxzy.top/rules/QuantumultX/img/qmyd.png, tag=全民悦动, enabled=false",
+        }, {
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/ziye-qmyd-header.txt, img-url= https://qxzy.top/rules/QuantumultX/img/qmyd.png, tag=全民悦动获取header, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/ziye-qmyd-header.txt, tag=全民悦动获取header, update-interval=86400, opt-parser=false, enabled=false",
+        },
+            
+            
+        {
+            "config": "0 */30 0-23 * * * https://raw.githubusercontent.com/XWF888/Task/Main/shuqi.js, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/shuqi.PNG, tag=书旗小说, enabled=false",
+        }, {
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/ziye-shuqi-header1.txt, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/shuqi.PNG, tag=书旗小说获取header, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/ziye-shuqi-header1.txt, tag=书旗小说获取header, update-interval=86400, opt-parser=false, enabled=false",
+        }, {
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/ziye-shuqi-header2.txt, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/shuqi.PNG, tag=书旗小说获取极速版书城header, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/ziye-shuqi-header2.txt, tag=书旗小说获取极速版书城header, update-interval=86400, opt-parser=false, enabled=false",
+        }, {
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/ziye-shuqi-body1.txt, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/shuqi.PNG, tag=书旗小说获取body, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/ziye-shuqi-body1.txt, tag=书旗小说获取body, update-interval=86400, opt-parser=false, enabled=false",
+        }, {
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/ziye-shuqi-body2.txt, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/shuqi.PNG, tag=书旗小说获取任务-收益body, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/ziye-shuqi-body2.txt, tag=书旗小说获取任务-收益body, update-interval=86400, opt-parser=false, enabled=false",
+        }, {
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/ziye-shuqi-body3.txt, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/shuqi.PNG, tag=书旗小说获取时长body, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/ziye-shuqi-body3.txt, tag=书旗小说获取时长body, update-interval=86400, opt-parser=false, enabled=false",
+        },
+            
+            
+        {
+            "config": "*/2 0-16 * * * https://raw.githubusercontent.com/XWF888/Task/Main/HTT.js, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/HTT.png, tag=惠头条, enabled=false",
+        }, {
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/HTTcookie.txt, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/HTT.png, tag=惠头条获取cookie, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/HTTcookie.txt, tag=惠头条获取cookie, update-interval=86400, opt-parser=false, enabled=false",
+        },
+            
+            
+        {
+            "config": "0 12,20 * * * https://raw.githubusercontent.com/XWF888/Task/Main/tls.js, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/tls.png, tag=兑换特仑苏, enabled=false",
+        }, {
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/tlscookie.txt, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/tls.png, tag=兑换特仑苏cookie, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/tlscookie.txt, tag=兑换特仑苏cookie, update-interval=86400, opt-parser=false, enabled=false",
+        },
+            
+            
+        {
+            "config": "0,10,20,30,40,50 10-20 * * * https://raw.githubusercontent.com/XWF888/Task/Main/ranlv.js, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/ranlv_144x.png, tag=燃旅视频, enabled=false",
+        }, {
+            "config": "0 0 0 1 1 * https://raw.githubusercontent.com/XWF888/Task/Main/ranlvcookie.txt, img-url=https://raw.githubusercontent.com/XWF888/Task/Main/ranlv_144x.png, tag=燃旅视频cookie, enabled=false",
+            "addons": "https://raw.githubusercontent.com/XWF888/Task/Main/ranlvcookie.txt, tag=燃旅视频cookie, update-interval=86400, opt-parser=false, enabled=false",
+        }
+           ],
+}

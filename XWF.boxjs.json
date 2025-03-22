@@ -1,0 +1,398 @@
+{
+    "id": "yangmao.app.sub",
+    "name": "M⃞r⃞.x⃞i⃞a⃞o⃞℡🇨🇳羊毛脚本订阅",
+    "author":"@XWF888",
+    "icon": "https://avatars.githubusercontent.com/u/77550098?s=60&v=4",
+    "repo": "https://github.com/XWF888/Task",
+    "apps": [{
+            "id":"txstock",
+            "name":"腾讯自选股",
+            "keys":[
+                "TxStockAppUrl",
+                "TxStockAppHeader",
+                "TxStockWxHeader",
+	        "TxStockAppUrl2",
+                "TxStockAppHeader2",
+                "TxStockWxHeader2",
+                "TxStockAppUrl3",
+                "TxStockAppHeader3",
+                "TxStockWxHeader3",
+                "TxStockAppUrl4",
+                "TxStockAppHeader4",
+                "TxStockWxHeader4"
+            ],
+            "settings": [{
+                    "id": "txstockSuffix",
+                    "name": "当前账号",
+                    "val": "1",
+                    "type": "number",
+                    "desc": "当前抓取ck记录的账号序号，如：1、2、4、"
+                },
+                {
+                    "id": "txstockCount",
+                    "name": "账号个数",
+                    "val": "1",
+                    "type": "number",
+                    "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+                }],
+            "author":"@David",
+            "repo":"https://github.com/bluesmallpig/scripts",
+            "icons":[
+                "https://raw.githubusercontent.com/XWF888/Task/Main/txzxg.png",
+                "https://raw.githubusercontent.com/XWF888/Task/Main/txzxg.png"
+            ],
+            "script":"https://github.com/"
+        },{
+            "id":"ksjsb",
+            "name":"快手极速版",
+            "keys":[
+                "ksjsbCookie"
+            ],
+            "settings": [{
+          "id": "ksjsbCookie",
+          "name": "CK 列表",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 8,
+          "desc": "ksjsbCookie"
+  }],
+            "author":"@leaf",
+            "repo":"https://github.com/bluesmallpig/scripts",
+            "icons":[
+                "https://raw.githubusercontent.com/XWF888/Task/Main/mini/Color/kuaishou.png",
+                "https://raw.githubusercontent.com/XWF888/Task/Main/mini/Color/kuaishou.png"
+            ],
+            "script":"https://github.com/"
+        }, {
+            "id":"ks",
+            "name":"快手",
+            "keys":[
+                "ksCookie"
+            ],
+            "settings": [{
+          "id": "ksCookie",
+          "name": "CK 列表",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 8,
+          "desc": "ksCookie"
+  }],
+            "author":"@leaf",
+            "repo":"https://github.com/bluesmallpig/scripts",
+            "icons":[
+                "https://raw.githubusercontent.com/XWF888/Task/Main/mini/Color/kuaishou.png",
+                "https://raw.githubusercontent.com/XWF888/Task/Main/mini/Color/kuaishou.png"
+            ],
+            "script":"https://github.com/"
+        }, {
+            "id":"dyjsb_xqf888",
+            "name":"抖音极速版",
+            "keys":["douyinzyfurl","douyinzyfhd","douyinurl", "douyinhd", "douyinbxurl", "douyinbxhd", "douyinkbxurl", "douyinkbxhd", "douyinzqurl", "douyinzqhd", "douyinzbbxurl", "douyinzbbxhd",
+                    "douyinzyfurl2","douyinzyfhd2","douyinurl2", "douyinh2d", "douyinbxurl2", "douyinbxhd2", "douyinkbxurl2", "douyinkbxhd2", "douyinzqurl2", "douyinzqhd2", "douyinzbbxurl2", "douyinzbbxhd2"],
+            "settings": [{
+                    "id": "dyjsbSuffix",
+                    "name": "当前账号",
+                    "val": "1",
+                    "type": "number",
+                    "desc": "当前抓取ck记录的账号序号，如：1、2、4、"
+                },
+                {
+                    "id": "dyjsbCount",
+                    "name": "账号个数",
+                    "val": "1",
+                    "type": "number",
+                    "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+                }],
+            "author":"@xqf888",
+            "repo":"https://github.com/bluesmallpig/scripts",
+            "icons":[
+                "https://raw.githubusercontent.com/XWF888/Task/Main/dyjsb.png",
+                "https://raw.githubusercontent.com/XWF888/Task/Main/dyjsb.png"
+            ],
+            "script":"https://github.com/"
+        },{
+      "id": "sync_ql",
+      "name": "同步青龙",
+      "keys": [
+        "ql_host",
+        "ql_app_id",
+        "ql_secret_key",
+        "sync_ql_key",
+        "sync_ql_remark"
+      ],
+      "settings": [
+        {
+          "id": "ql_host",
+          "name": "青龙访问地址",
+          "val": "http://127.0.0.1:5700",
+          "type": "text",
+          "desc": "填写青龙的访问地址"
+        },
+        {
+          "id": "ql_app_id",
+          "name": "青龙授权id",
+          "val": "",
+          "type": "text",
+          "desc": "填写青龙的第三方授权id"
+        },
+        {
+          "id": "ql_secret_key",
+          "name": "青龙授权秘钥",
+          "val": "",
+          "type": "text",
+          "desc": "填写青龙的第三方授权秘钥"
+        },
+        {
+          "id": "sync_ql_key",
+          "name": "青龙变量名",
+          "val": "",
+          "type": "selects",
+          "items": [
+            {
+              "key": "douyinzyfurl",
+              "label": "🎵抖音总音符"
+            },
+            {
+              "key": "douyinzyfhd",
+              "label": "🎵抖音总音符hd"
+            },
+            {
+              "key": "douyinurl",
+              "label": "🎵抖音限时任务"
+            },
+            {
+              "key": "douyinhd",
+              "label": "🎵抖音限时任务hd"
+            },
+            {
+              "key": "douyinbxurl",
+              "label": "🎵抖音宝箱"
+            },
+            {
+              "key": "douyinbxhd",
+              "label": "🎵抖音宝箱hd"
+            },
+            {
+              "key": "douyinkbxurl",
+              "label": "🎵抖音宝箱广告"
+            },
+            {
+              "key": "douyinkbxhd",
+              "label": "🎵抖音宝箱广告hd"
+            },
+            {
+              "key": "douyinzqurl",
+              "label": "🎵抖音视频任务"
+            },
+            {
+              "key": "douyinzqhd",
+              "label": "🎵抖音视频任务hd"
+            },
+            {
+              "key": "douyinzbbxurl",
+              "label": "🎵抖音直播红包"
+            },
+            {
+              "key": "douyinzbbxhd",
+              "label": "🎵抖音直播红包hd"
+            },
+            {
+              "key": "XGSPurl",
+              "label": "🍉西瓜签到"
+            },
+            {
+              "key": "XGSPhd",
+              "label": "🍉西瓜签到hd"
+            },
+            {
+              "key": "XGSPydurl",
+              "label": "🍉西瓜阅读"
+            },
+            {
+              "key": "XGSPydhd",
+              "label": "🍉西瓜阅读hd"
+            },
+            {
+              "key": "XGSPkbxurl",
+              "label": "🍉西瓜开宝箱"
+            },
+            {
+              "key": "XGSPkbxhd",
+              "label": "🍉西瓜开宝箱hd"
+            },
+            {
+              "key": "XGSPbxggurl",
+              "label": "🍉西瓜宝箱广告"
+            },
+            {
+              "key": "XGSPbxgghd",
+              "label": "🍉西瓜宝箱广告hd"
+            },
+            {
+              "key": "XGSPbx1url",
+              "label": "🍉西瓜宝箱追加广告1"
+            },
+            {
+              "key": "XGSPbx1hd",
+              "label": "🍉西瓜宝箱追加广告1hd"
+            },
+            {
+              "key": "XGSPbx2url",
+              "label": "🍉西瓜宝箱追加广告2"
+            },
+            {
+              "key": "XGSPbx2hd",
+              "label": "🍉西瓜宝箱追加广告2hd"
+            },
+            {
+              "key": "XGSPggjfurl",
+              "label": "🍉西瓜广告赚积分"
+            },
+            {
+              "key": "XGSPggjfhd",
+              "label": "🍉西瓜广告赚积分hd"
+            },
+            {
+              "key": "XGSPjineurl",
+              "label": "🍉西瓜用户积分"
+            },
+            {
+              "key": "XGSPjinehd",
+              "label": "🍉西瓜用户积分hd"
+            },
+            {
+              "key": "XGSPliveurl",
+              "label": "🍉西瓜直播"
+            },
+            {
+              "key": "XGSPlivehd",
+              "label": "🍉西瓜直播hd"
+            },
+	    {
+              "key": "fqxsurl",
+              "label": "🍅番茄小说URL"
+            },
+            {
+              "key": "fqxsua",
+              "label": "🍅番茄小说UA"
+            },
+            {
+              "key": "fqxstoken",
+              "label": "🍅番茄小说TK"
+            },
+            {
+              "key": "fqxscookie",
+              "label": "🍅番茄小说CK"
+            },
+            {
+              "key": "fqxsxsscookie",
+              "label": "🍅番茄小说宝箱CK"
+            },
+            {
+              "key": "fqxsbxurl",
+              "label": "🍅番茄小说宝箱URL"
+            }	  	  
+          ],
+          "desc": "选择需要同步的APP"
+        },
+        {
+          "id": "sync_ql_remark",
+          "name": "青龙变量备注",
+          "val": "",
+          "type": "text",
+          "desc": "填写需要同步的变量备注信息"
+        }
+      ],
+      "author": "@David",
+      "repo": "https://github.com/bluesmallpig/scripts",
+      "icons": [
+        "https://raw.githubusercontent.com/XWF888/Task/Main/ql-mini.png",
+        "https://raw.githubusercontent.com/XWF888/Task/Main/ql.png"
+      ],
+      "script": "https://raw.githubusercontent.com/XWF888/Task/Main/ql/sync_ql.js"
+    },{
+            "id":"xgsp_xqf888",
+            "name":"西瓜视频",
+            "keys":[
+                "XGSPurl",
+                "XGSPhd",
+                "XGSPydurl",
+	        "XGSPydhd",
+                "XGSPkbxurl",
+                "XGSPkbxhd",
+                "XGSPbxggurl",
+                "XGSPbxgghd",
+                "XGSPbx1url",
+                "XGSPbx1hd",
+                "XGSPbx2url",
+                "XGSPbx2hd",
+                "XGSPggjfurl",
+                "XGSPggjfhd",
+                "XGSPjineurl",
+                "XGSPjinehd",
+		"XGSPliveurl",
+		"XGSPlivehd" 
+
+            ],
+            "settings": [{
+                    "id": "xgspSuffix",
+                    "name": "当前账号",
+                    "val": "1",
+                    "type": "number",
+                    "desc": "当前抓取ck记录的账号序号，如：1、2、4、"
+                },
+                {
+                    "id": "xgspCount",
+                    "name": "账号个数",
+                    "val": "1",
+                    "type": "number",
+                    "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+                }],
+            "author":"@xqf888",
+            "repo":"https://github.com/bluesmallpig/scripts",
+            "icons":[
+                "https://raw.githubusercontent.com/XWF888/Task/Main/xgsp.png",
+                "https://raw.githubusercontent.com/XWF888/Task/Main/xgsp.png"
+            ],
+            "script":"https://github.com/"
+        },{
+    "id": "fqxs",
+    "name": "番茄小说",
+    "keys": ["fqxsurl","fqxsua","fqxstoken","fqxscookie","fqxsxsscookie","fqxsbxurl","fqxsurl2","fqxsua2","fqxstoken2","fqxscookie2","fqxsxsscookie2","fqxsbxurl2"],
+    "author": "@Ariszy",
+    "settings": [{
+            "id": "tz",
+            "name": "静默运行",
+            "val": "1",
+            "type": "number",
+            "desc": "0为不通知，1为全部通知"
+        },
+      {
+        "id": "fqxsstatus",
+        "name": "当前账号",
+        "val": "1",
+        "type": "number",
+        "desc": "当前账号对应"
+      },    
+      {
+        "id": "fqxscount",
+        "name": "账号个数",
+        "val": "1",
+        "type": "number",
+        "desc": "需要几个账号，数字为几"
+      },
+       {
+        "id": "host",
+        "name": "host",
+        "val": "ib.snssdk.com",
+        "type": "string",
+        "desc": "当前版本host"
+      } ],
+    "repo": "https://github.com/XWF888/Task/blob/Main/fqxs.js",
+    "icons": ["https://raw.githubusercontent.com/XWF888/Task/Main/fqxs.png", "https://raw.githubusercontent.com/XWF888/Task/Main/fqxs.png"],
+    "script": "https://raw.githubusercontent.com/XWF888/Task/Main/fqxs.js"
+  }
+  ]
+}
