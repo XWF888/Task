@@ -1,0 +1,146 @@
+{
+  "id": "zqkd.script.sub",
+  "name": "M⃞r⃞.x⃞i⃞a⃞o⃞℡🇨🇳中青多账号",
+  "author": "@XWF888",
+  "icon": "https://avatars.githubusercontent.com/u/77550098?s=60&v=4",
+  "repo": "https://github.com/XWF888/Task/tree/Main/zqkd",
+  "apps": [{
+      "id": "youth_sync",
+      "name": "中青数据cookie",
+      "keys": ["youthheader_zq", "read_zq", "readtime_zq", "youthheader_zq2", "read_zq2", "readtime_zq2", "youthheader_zq3", "read_zq3", "readtime_zq3", "youthheader_zq4", "read_zq4", "readtime_zq4"],
+      "descs_html": [
+        "多账号脚本地址【<a href=\"https://raw.githubusercontent.com/XWF888/Task/Main/zqkd/youth_sync.js\">中青看点极速版youth_sync</a>】",
+        "单账号脚本地址【<a href=\"https://raw.githubusercontent.com/XWF888/Task/Main/zqkd/youth.js\">中青看点极速版youth</a>】",
+        "中青多账号ck抓取步骤：",
+        "1、boxjs中指定抓包账号，如：2",
+        "2、远程复写订阅配置【<a href=\"https://raw.githubusercontent.com/XWF888/Task/Main/zqkd/rewrite-zq.plugin\">中青看点</a>】【<a href=\"https://raw.githubusercontent.com/XWF888/Task/Main/zqkd/rewrite-zqkkz.plugin\">中青看看赚、浏览赚</a>】【<a href=\"https://raw.githubusercontent.com/XWF888/Task/Main/zqkd/rewrite-zqread.plugin\">中青阅读</a>】",
+        "  ⚠️订阅为Loon的插件，QX需开启解析器才能使用",
+        "3、打开中青APP，进入“我的”=>“任务中心”抓取 youthheader_zq 数据、 进入任务中心里的看看赚，点任务进入页面即可获取看看赚数据、 进入看看赚页面顶部的浏览赚页面，点任务跳转浏览器时可获取浏览赚数据（中青app有可能不发起任务开始请求，那将无法抓包）",
+        "4、在首页找个视频看看，超过1分钟后返回上一页面可获取时长数据，首次获取或时长数据记录的有效时间大于60秒时才会进行通知提醒",
+        "📖备注：看看赚的任务可能失效过期，建议：(1)、在看看赚配置中选则移除失败数据；(2)、看看赚任务一天跑两次；(3)、第一二次任务执行之间，可再回中青app看看赚任务页面查看下是否有新任务"
+      ],
+      "author": "@XWF888",
+      "settings": [{
+        "id": "ckFormat",
+        "val": "",
+        "name": "新CK格式",
+        "type": "boolean",
+        "desc": "数据是否按新格式存储"
+      }, {
+        "id": "zqSuffix",
+        "name": "抓包账号",
+        "val": "1",
+        "type": "number",
+        "desc": "指定抓取的数据包用于哪个账号，设置数值如：1、2、3..."
+      }, {
+        "id": "zqExecAc",
+        "name": "中青执行账号",
+        "val": "1",
+        "type": "text",
+        "desc": "设置中青的执行账号，多个账号用半角逗号分隔，如：1,2,4"
+      }],
+      "repo": "https://github.com/XWF888/Task/blob/Main/zqkd/youth_sync.js",
+      "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/youth.png", "https://raw.githubusercontent.com/Orz-3/mini/master/Color/youth.png"],
+      "script": "https://raw.githubusercontent.com/XWF888/Task/Main/zqkd/youth_sync.js"
+    },
+    {
+      "id": "zqread",
+      "name": "中青循环阅读",
+      "descs_html": [
+        "中青阅读脚本地址【<a href=\"https://raw.githubusercontent.com/XWF888/Task/Main/zqkd/zqread.js\">中青循环阅读</a>】",
+        "中青分享阅读订阅配置【<a href=\"https://raw.githubusercontent.com/XWF888/Task/Main/zqkd/youthShareRead.conf\">分享阅读</a>】",
+        "分享阅读食用方法：中青分享一篇文章到自己的微信上，自己点击一下即触发会自动完成3次后有阅读奖励，500青豆/次",
+        "👉注意：因此脚本使用的阅读数据存储位置与songyangzz大佬的不同，所以需搭配【<a href=\"https://raw.githubusercontent.com/XWF888/Task/Main/zqkd/rewrite-zqread.plugin\">阅读数据抓包订阅</a>】抓取的阅读数据使用",
+        "⚠️：QX阅读数据可通过【<a href=\"https://raw.githubusercontent.com/XWF888/Task/Main/zqkd/zqGaReadData.js\">Http Backend脚本</a>】的方式导出：配置好后浏览器中访问即可获取数据"
+      ],
+      "author": "@XWF888",
+      "settings": [{
+        "id": "readMode",
+        "name": "执行模式（点击查看设置说明）",
+        "val": "0",
+        "type": "text",
+        "desc": "0-循环阅读：任务执行时间需大于21秒\n1-去重排序：根据响应数据判断重复并将视频往前排，依此优化阅读效率（可用半角逗号间隔该模式运行的账号，如账号一跟账号三才执行去重排序：1,1,3）\n3-备份数据：根据指定的备份格式，将要备份的数据以log的形式打印出来（高版本qx限制了打印日志长度，需使用其它方式导出）\n4-清空所有中青数据"
+      }, {
+        "id": "zqReadScheme",
+        "name": "阅读数据备份输出格式",
+        "val": "DF",
+        "type": "radios",
+        "items": [{
+            "key": "QX",
+            "label": "QX持久化数据代码"
+          },
+          {
+            "key": "LS",
+            "label": "Loon&Surge持久化数据代码"
+          },
+          {
+            "key": "GA",
+            "label": "Github Actions使用的以&分隔数据"
+          },
+          {
+            "key": "DF",
+            "label": "Default默认选项"
+          }
+        ]
+      }, {
+        "id": "read_count",
+        "name": "账号1总阅读数",
+        "val": "0",
+        "type": "number",
+        "desc": "账号1阅读数据总行数"
+      }, {
+        "id": "read_count2",
+        "name": "账号2总阅读数",
+        "val": "0",
+        "type": "number",
+        "desc": "账号2阅读数据总行数"
+      }, {
+        "id": "read_count3",
+        "name": "账号3总阅读数",
+        "val": "0",
+        "type": "number",
+        "desc": "账号3阅读数据总行数"
+      }, {
+        "id": "read_count4",
+        "name": "账号4总阅读数",
+        "val": "0",
+        "type": "number",
+        "desc": "账号4阅读数据总行数"
+      }],
+      "repo": "https://github.com/XWF888/Task/blob/Main/zqkd/zqread.js",
+      "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/youth.png", "https://raw.githubusercontent.com/Orz-3/mini/master/Color/youth.png"],
+      "script": "https://raw.githubusercontent.com/XWF888/Task/Main/zqkd/youth_sync.js",
+      "scripts": [{
+        "name": "自动阅读",
+        "script": "https://raw.githubusercontent.com/XWF888/Task/Main/zqkd/zqread.js"
+      }]
+    },
+    {
+      "id": "youth_banner",
+      "name": "中青看看赚/浏览赚",
+      "descs_html": [
+        "中青看看赚/浏览赚脚本地址【<a href=\"https://raw.githubusercontent.com/XWF888/Task/Main/zqkd/youth_banner.js\">看看赚/浏览赚</a>】"
+      ],
+      "keys": ["youth_banner", "youth_banner2", "youth_banner3", "youth_banner4"],
+      "author": "@XWF888",
+      "settings": [{
+        "id": "delErrorData",
+        "name": "移除当日失败两次+的任务数据",
+        "val": "0",
+        "type": "radios",
+        "items": [{
+            "key": "0",
+            "label": "不移除"
+          },
+          {
+            "key": "1",
+            "label": "移除"
+          }
+        ]
+      }],
+      "repo": "https://github.com/XWF888/Task/blob/Main/zqkd/youth_banner.js",
+      "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/youth.png", "https://raw.githubusercontent.com/Orz-3/mini/master/Color/youth.png"],
+      "script": "https://raw.githubusercontent.com/XWF888/Task/Main/zqkd/youth_banner.js"
+    }
+  ]
+}
